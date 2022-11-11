@@ -82,8 +82,7 @@ plot_geom_point + plot_geom_jitter
 The higher the perceived beauty of the lecturer, the higher the students will rate their course.
 
 ### Exercise 6
-
-*Add interpretation of intercept here.*
+It is meaningful, because all points are around score 4, it is possible to rate their beauty 0.
 
 ### Exercise 7
 
