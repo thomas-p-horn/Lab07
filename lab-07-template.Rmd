@@ -79,7 +79,7 @@ plot_geom_point + plot_geom_jitter
 
 ### Exercise 5
 
-*Add interpretation of intercept here.*
+The higher the perceived beauty of the lecturer, the higher the students will rate their course.
 
 ### Exercise 6
 
