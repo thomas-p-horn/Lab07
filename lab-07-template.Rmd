@@ -1,6 +1,6 @@
 ---
 title: "Lab 07 - Modelling course evaluations"
-author: [TEAM NAME]
+author: "Team 1_2"
 output: 
   tufte::tufte_html:
     css: ../lab.css
@@ -28,7 +28,8 @@ evals<-read.csv("data/evals.csv", row.names=1)
 ### Exercise 1
 
 ```{r viz-score}
-# add code here
+ggplot(evals, aes(score)) +
+  geom_bar()
 ```
 
 *Add your narrative here.*
