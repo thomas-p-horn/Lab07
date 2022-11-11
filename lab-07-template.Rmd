@@ -37,12 +37,7 @@ This shows that most students rate their courses fairly well, with the distribut
 ### Exercise 2
 
 ```{r viz-score-bty}
-# add the code for each plot and assign them to the names as outlined below
-# remove eval = FALSE from the code chunk options
-# knit the document, and you'll see them appear next to each other
-# this uses the patchwork package loaded above
-# learn more about patchwork at https://patchwork.data-imaginist.com/
-# it might be useful for your presentations!
+
 plot_geom_point  <- ggplot(evals, aes(bty_avg, score)) +
   geom_point()
 
@@ -56,19 +51,19 @@ In the first plot, all the points are on discrete numbers.
 
 ### Exercise 3
 
-```{r fit-score_bty_fit, eval = FALSE}
-# remove eval = FALSE from the code chunk options after filling in the blanks
+```{r fit-score_bty_fit}
+
 score_bty_fit <- linear_reg() %>%
   set_engine("lm") %>%
-  fit(___ ~ ___, data = ___)
+  fit(score ~ bty_avg, data = evals)
 ```
 
-```{r tidy-score_bty_fit, eval = FALSE}
-# remove eval = FALSE from the code chunk options after filling in the blanks
-tidy(___)
+```{r tidy-score_bty_fit}
+
+tidy(score_bty_fit)
 ```
 
-*Add your linear model here. Don't worry too much about notation, you can use things like score-hat.*
+score = 3.88 + 0.07 * bty_avg
 
 ### Exercise 4
 
